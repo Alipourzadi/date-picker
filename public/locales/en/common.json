@@ -1,0 +1,13 @@
+{
+  "sensorName": {
+    "0": "Internal temp",
+    "1": "External temp",
+    "2": "Internal hum",
+    "3": "External hum",
+    "4": "Internal light",
+    "5": "External light",
+    "6": "Soil moisture",
+    "7": "Water hardness",
+    "8": "Reservoir temp"
+  }
+}
