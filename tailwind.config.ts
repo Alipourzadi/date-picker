@@ -96,6 +96,16 @@ module.exports = {
             opacity: 1,
           },
         },
+        "slide-x": {
+          from: {
+            transform: "translateZ(-1400px)",
+            opacity: 0,
+          },
+          to: {
+            transform: " translateZ(0)",
+            opacity: 1,
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

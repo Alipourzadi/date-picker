@@ -143,5 +143,51 @@
 }
 
 .tap-highlight-transparent {
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.enter-left-enter {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.enter-left-enter.enter-left-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: opacity 0.1s cubic-bezier(0.53, 0.13, 0.14, 0.69),
+    transform 0.2s cubic-bezier(0.53, 0.13, 0.14, 0.69);
+}
+
+.enter-left-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+.enter-left-exit.enter-left-exit-active {
+  transform: translateX(30px);
+  opacity: 0;
+  transition: opacity 0.1s cubic-bezier(0.53, 0.13, 0.14, 0.69),
+    transform 0.5s cubic-bezier(0.53, 0.13, 0.14, 0.69);
+}
+
+.enter-right-enter {
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.enter-right-enter.enter-right-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: opacity 0.1s cubic-bezier(0.53, 0.13, 0.14, 0.69),
+    transform 0.2s cubic-bezier(0.53, 0.13, 0.14, 0.69);
+}
+
+.enter-right-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+.enter-right-exit.enter-right-exit-active {
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: opacity 0.1s cubic-bezier(0.53, 0.13, 0.14, 0.69),
+    transform 0.5s cubic-bezier(0.53, 0.13, 0.14, 0.69);
 }
