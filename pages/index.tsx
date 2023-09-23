@@ -1,11 +1,9 @@
 import DatePicker from "@/components/DatePicker";
-import { enUS, faIR, arDZ } from "date-fns-jalali/locale";
+import { enUS, faIR } from "date-fns-jalali/locale";
 
-type Props = {};
-
-export default function index({}: Props) {
+export default function HomePage() {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <DatePicker
         locale={faIR}
         defaultValue={new Date()}

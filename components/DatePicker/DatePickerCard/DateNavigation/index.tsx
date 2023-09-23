@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import { CaretLeft, CaretRight } from "@phosphor-icons/react";
+import { CaretDown, CaretLeft, CaretRight } from "@phosphor-icons/react";
 import { Locale, addMonths, subMonths } from "date-fns-jalali";
 
 import { dateStatus } from "@/shared/types";
@@ -20,7 +20,7 @@ export default function DateNavigation({
 }: Props) {
   return (
     <div>
-      <div className="flex flex-row items-center justify-between p-0 m-0 gap-0">
+      <div className="flex items-center justify-between">
         <button
           onClick={() => {
             setDatePicker((prevState) => ({
@@ -33,7 +33,7 @@ export default function DateNavigation({
         >
           <CaretLeft size={24} />
         </button>
-        <div className="font-boldFamily m-0">
+        <div className="font-boldFamily">
           {formatToLocale(datePicker.currentDate, locale, {
             month: "long",
           })}
